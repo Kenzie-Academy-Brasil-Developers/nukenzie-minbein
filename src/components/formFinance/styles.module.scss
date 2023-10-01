@@ -1,0 +1,42 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 50px 40px 50px 40px;
+  justify-content: center;
+  gap: 30px;
+  font-family: var(--font-family);
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 35px;
+    border: 1px var(--grey-2) solid;
+  }
+
+  button {
+    border: none;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    background-color: var(--color-primary);
+    color: var(--grey-1);
+    font-family: var(--font-family);
+
+    &:hover {
+      background-color: var(--color-primary2);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .formContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

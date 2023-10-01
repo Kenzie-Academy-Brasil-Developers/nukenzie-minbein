@@ -1,0 +1,47 @@
+.financeList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  ul {
+    width: 587px;
+
+    max-height: 485px;
+    overflow-y: auto;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: var(--title-3);
+    font-weight: 700;
+  }
+  p {
+    font-size: var(--body);
+    font-weight: 400;
+    color: var(--grey-4);
+  }
+}
+.entrada {
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 4px 0px 0px 4px;
+}
+
+.saida {
+  border-left: 4px solid var(--grey-2);
+  border-radius: 4px 0px 0px 4px;
+}
+@media (max-width: 1024px) {
+  .financeList{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    ul{
+      width: 379px;
+      gap: 20px
+    }
+  }
+  
+}
