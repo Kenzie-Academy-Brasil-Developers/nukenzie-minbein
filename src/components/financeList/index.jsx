@@ -1,7 +1,9 @@
 import FinanceCard from "../financeCard";
 import styles from "./styles.module.scss";
 
-const FinanceList = ({ transactions }) => {
+const FinanceList = ({ transactions, removeTransaction }) => {
+
+  
   return (
     <div className={styles.financeList}>
       <h2>Resumo financeiro</h2>
@@ -14,7 +16,7 @@ const FinanceList = ({ transactions }) => {
                 transaction.type === "Entrada" ? styles.entrada : styles.saida
               }`}
             >
-              <FinanceCard transaction={transaction} />
+              <FinanceCard  removeTransaction={removeTransaction} transaction={transaction} />
             </div>
           ))
         ) : (

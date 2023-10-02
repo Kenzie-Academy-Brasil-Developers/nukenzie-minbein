@@ -1,8 +1,7 @@
-import { useState } from "react";
 import Header from "./components/header";
 import Form from "./components/formFinance";
-import "./globalstyles.scss";
 import "./reset.scss";
+import "./globalStyles.scss"
 
 const App = () => {
   return (

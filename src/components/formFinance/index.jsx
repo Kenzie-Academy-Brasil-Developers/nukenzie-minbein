@@ -20,7 +20,7 @@ const Form = () => {
 
     if (description && value && typeValue) {
       const newTransaction = {
-        id: Date.now(),
+        id: Math.random(),
         description,
         value,
         type: typeValue,
@@ -28,6 +28,15 @@ const Form = () => {
       setTransactions([...transactions, newTransaction]);
     }
   };
+  
+  const removeTransaction = (id) => {
+    const newTransactions = transactions.filter((item) => {
+      return item.id != id;
+    });
+
+    setTransactions(newTransactions);
+  }
+
   const typeOptions = [
     { label: "Selecione", value: "" },
     { label: "Entrada", value: "Entrada" },
@@ -74,7 +83,7 @@ const Form = () => {
         </section>
 
         <section>
-          <FinanceList transactions={transactions} />
+          <FinanceList removeTransaction={removeTransaction} transactions={transactions} />
         </section>
       </div>
     </>
