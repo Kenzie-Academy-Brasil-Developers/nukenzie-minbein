@@ -17,11 +17,12 @@ const FinanceList = ({ transactions, removeTransaction }) => {
               }`}
             >
               <FinanceCard  removeTransaction={removeTransaction} transaction={transaction} />
-            </div>
+            </div> 
           ))
         ) : (
-          <p>Você ainda não possui nenhum lançamento</p>
+          <span>Você ainda não possui nenhum lançamento</span>
         )}
+       
       </ul>
     </div>
   );

@@ -79,7 +79,9 @@ const Form = () => {
             />
             <button type="submit">Inserir valor</button>
           </form>
+          {transactions.length > 0 && 
           <Total transactions={transactions} />
+          }
         </section>
 
         <section>

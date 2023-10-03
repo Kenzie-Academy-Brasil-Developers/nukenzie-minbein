@@ -6,8 +6,9 @@
   ul {
     width: 587px;
 
-    max-height: 485px;
     overflow-y: auto;
+
+    max-height: 485px;
 
     display: flex;
     gap: 10px;
@@ -22,7 +23,15 @@
     font-weight: 400;
     color: var(--grey-4);
   }
+  span {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--grey-4);
+    overflow: hidden;
+    margin-top: 30px;
+  }
 }
+
 .entrada {
   border-left: 4px solid var(--color-secondary);
   border-radius: 4px 0px 0px 4px;
@@ -33,15 +42,14 @@
   border-radius: 4px 0px 0px 4px;
 }
 @media (max-width: 1024px) {
-  .financeList{
+  .financeList {
     display: flex;
     gap: 20px;
     flex-direction: column;
 
-    ul{
+    ul {
       width: 379px;
-      gap: 20px
+      gap: 20px;
     }
   }
-  
 }
